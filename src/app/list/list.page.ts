@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { notStrictEqual } from 'assert';
 
 @Component({
   selector: 'app-list',
@@ -23,33 +22,13 @@ export class ListPage implements OnInit {
   private notes = [
     'Altor',
     'Altor',
-    'Altor',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
-  ];
-  private notes = [
-    'Altor',
-    'Altor',
-    'Altor',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
+    'Altor'
   ];
   public items: Array<{ title: string; note: string; icon: string }> = [];
   constructor() {
     for (let i = 1; i < 4; i++) {
       this.items.push({
-        title: 'thisnotes',
-        title: 'vagabundo',
+        title: 'Item ' + i,
         note: this.notes[Math.floor(Math.random() * this.notes.length)],
         icon: this.icons[Math.floor(Math.random() * this.icons.length)]
       });

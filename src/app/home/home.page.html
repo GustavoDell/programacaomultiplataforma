@@ -10,73 +10,10 @@
 </ion-header>
 
 <ion-content>
-  
-  
-  
-  
-  
-  
-  <ion-card class="welcome-card">
-      <ion-img src="/assets/shapes.svg"></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>Cadastrar</ion-card-subtitle>
-        <ion-card-title>Preencha os campos</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <ion-item>
-          <ion-label position="floating">Titulo</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-        
-        <ion-item>
-          <ion-label position="floating">Subtitulo</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-        
-        <ion-item>
-          <ion-label position="floating">Capa</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label position="floating">Editora</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label position="floating">Autor</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label position="floating">Isbn</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label position="floating">Publicação</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-      
-        <ion-item>
-          <ion-label position="floating">Paginas</ion-label>
-          <ion-input></ion-input>
-        </ion-item>
-
-        <ion-button color="dark">Cadastrar</ion-button>
-      </ion-card-content>
-    </ion-card>
-    <ion-list lines="none">
-      <ion-list-header>
-        <ion-label>Opções</ion-label>
-      </ion-list-header>
-      <ion-item href="">
-        <ion-icon slot="start" color="medium" name="book"></ion-icon>
-        <ion-label>Livros cadastrados</ion-label>
-      </ion-item>
-      <ion-item href="">
-        <ion-icon slot="start" color="medium" name="build"></ion-icon>
-        <ion-label>Configurar Livro</ion-label>
+    <ion-list>
+      <ion-item *ngFor="let livro of livros">
+        <h2>{{livro.nome}}</h2>
+        <p>{{livro.autor}}</p>
       </ion-item>
     </ion-list>
 </ion-content>
