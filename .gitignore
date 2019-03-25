@@ -19,11 +19,7 @@ npm-debug.log*
 .tmp/
 .versions/
 coverage/
-<<<<<<< HEAD
-www/
-=======
 dist/
->>>>>>> Initial commit
 node_modules/
 tmp/
 temp/
@@ -31,10 +27,7 @@ platforms/
 plugins/
 plugins/android.json
 plugins/ios.json
-<<<<<<< HEAD
-=======
 www/
->>>>>>> Initial commit
 $RECYCLE.BIN/
 
 .DS_Store
