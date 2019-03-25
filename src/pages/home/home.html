@@ -8,11 +8,25 @@
 </ion-header>
 
 <ion-content padding>
-  <h3>Ionic Menu Starter</h3>
-
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
-  </p>
-
+  <ion-slides pager> 	    
+    <ion-slide> 	     
+      <img class="slide_imagem" src="assets/imgs/livros-home.png">
+      <button ion-button block (click)="irParaLivros()">Livros</button> 	    
+    </ion-slide>	    
+    <ion-slide>
+      <img class="slide_imagem" src="assets/imgs/filmes-home.png">
+      <button ion-button block (click)="irParaFilmes()">Filmes</button> 	      	    
+    </ion-slide> 	    
+    <ion-slide> 	      
+      <h2>Slide 3</h2> 	   
+   </ion-slide> 	
+  </ion-slides>
+  
+  
+  
+  
   <button ion-button secondary menuToggle>Toggle Menu</button>
+  <button (click)="irParaLivros()">Livros</button>
+  <button (click)="irParaFilmes()">Filmes</button>
 </ion-content>
+  
