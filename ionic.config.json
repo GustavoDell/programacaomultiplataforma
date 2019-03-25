@@ -1,5 +1,13 @@
 {
   "name": "AppLivro",
+<<<<<<< HEAD
   "integrations": {},
   "type": "angular"
+=======
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+>>>>>>> Initial commit
 }
